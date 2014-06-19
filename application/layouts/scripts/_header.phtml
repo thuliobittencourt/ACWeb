@@ -1,0 +1,90 @@
+<?php echo $this->doctype ?>   
+<html>
+    <head>
+        <?php echo $this->headTitle("Aluga Casa Web") ?>
+        <?php echo $this->headMeta() ?>
+
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery.js') ?>
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/bootstrap.js') ?>
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery-ui.js') ?>
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery-ui-1.10.2.custom.js') ?>
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery.maskedinput.js') ?>
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9')) ?>
+
+        <?php echo $this->headScript() ?>
+
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/jquery-ui.css', 'screen') ?>
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/bootstrap.css', 'screen') ?>
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/font-awesome.css', 'screen') ?>
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/font-awesome.min.css', 'screen', 'IE 7') ?>
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/global.css', 'screen') ?>
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/sticky-footer-styles.css', 'screen') ?>
+        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/bootstrap-responsive.css', 'screen') ?>
+
+        <?php echo $this->headLink() ?>
+
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Aluga Casa Web</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Inicio</a></li>
+                        <li><a href="#about">Meus Imóveis</a></li>
+                        <li><a href="#contact">Financeiro</a></li>
+                        <li><a href="#contact">Mensagens</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sistema <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Entrar <b class="caret"></b></a>
+                            <form class="login-menu dropdown-menu well">
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label">Usuário</label>
+                                        <div class="controls">
+                                            <input type="text" placeholder="Nome de usuário">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label">Senha</label>
+                                        <div class="controls">
+                                            <input type="password" placeholder="Senha">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
