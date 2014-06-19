@@ -2,10 +2,14 @@
 
 class UsuariosController extends Zend_Controller_Action
 {
-
+    /**
+     * @var Zend_Log
+     */ 
+    private $logger;
+    
     public function init()
     {
-        /* Initialize action controller here */
+        $this->logger = Zend_Registry::get('logger');
     }
 
     public function indexAction()
@@ -15,12 +19,14 @@ class UsuariosController extends Zend_Controller_Action
 
     public function createAction()
     {
-        // action body
+        $config = new Zend_Config_Ini(APPLICATION_PATH . '/configs/forms/usuarios.ini', 'create');
+        $this->view->form = new Application_Form_Usuarios($config);
     }
 
     public function editAction()
     {
-        // action body
+        $config = new Zend_Config_Ini(APPLICATION_PATH . '/configs/forms/usuarios.ini', 'edit');
+        $this->view->form = new Application_Form_Usuarios($config);
     }
 
 

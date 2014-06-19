@@ -21,7 +21,10 @@
           <actionMethod actionName="edit"/>
         </controllerFile>
       </controllersDirectory>
-      <formsDirectory enabled="false"/>
+      <formsDirectory>
+        <formFile formName="Usuarios"/>
+        <formFile formName="ListarUsuarios"/>
+      </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
           <layoutScriptFile layoutName="layout"/>
